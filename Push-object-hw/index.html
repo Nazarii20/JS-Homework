@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    .div-for-form{
+        width: 1400px;
+       margin-left: 100px;
+       margin-top: 100px;
+       display: flex;
+       justify-content: space-around;
+    }
+    .divone{
+        display:flex;
+       flex-direction:column;
+    }
+    input{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 500px;
+        height: 30px;
+        border-radius: 3px;
+    }
+    .add-user{
+     width: 80px;
+     height: 35px;
+     color: forestgreen;
+     background-color: white;
+     border-color: forestgreen;
+     border-radius: 4px;
+
+    }
+    .add-user:hover{
+        color: white;
+        background-color: forestgreen;
+    }
+    .ready-objects{
+        display: flex;
+        /* margin-top: 100px; */
+        width: 600px;
+       
+    }
+   .title{
+    border-top: 2px solid gray;
+    border-bottom: 2px solid gray;
+    width: 600px;
+    height: 40px;
+    padding-top: 10px;
+   }
+   .password-input{
+    font-family: Verdana;
+   }
+</style>
+<body>
+<div class="div-for-form">
+    <div class="formone">
+<label for="">Login</label><br>
+<input type="text" class="login-input" placeholder="Enter login"><br>
+<label for="">Password</label><br>
+<input type="password" class="password-input" placeholder="Enter password"><br>
+<label for="">Email adress</label><br>
+<input type="text" class="email-input" placeholder="Enter email"><br>
+<button class="add-user">Add user</button>
+</div>
+<div class="ready-objects">
+    <div class="title">
+    <div class="number" style="display: inline-block; width: 40px; height: 40px; "><label for="" style="font-size: 25px; font-weight: bold;">#</label></div>
+    <div class="login" style="display: inline-block; width: 80px; height: 40px;"><label for=""style="font-size: 20px; font-weight: bold;">Login</label></div>
+    <div class="password" style="display: inline-block; width: 120px; height: 40px;"><label for=""style="font-size: 20px; font-weight: bold;">Password</label></div>
+    <div class="email" style="display: inline-block; width: 150px; height: 40px;"><label for=""style="font-size: 20px; font-weight: bold;">Email</label></div>
+    <div class="edit" style="display: inline-block;  width: 90px; height: 40px;"><label for=""style="font-size: 20px; font-weight: bold;">Edit</label></div>
+    <div class="delete" style="display: inline-block; width: 90px; height: 40px;"><label for=""style="font-size: 20px; font-weight: bold;">Delete</label></div>
+    </div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+        display:flex;
+        flex-direction:column; 
+        justify-content:center;
+        align-items: center;
+        min-height:100vh;
+        gap: 30px;
+    }
+   input{
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+   }
+   .btn{
+    width: 350px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: deepskyblue;
+   color: white;
+   }
+  .modal{
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 15%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+   }
+   .modalwindow{
+    background-color: #fefefe;
+    margin: auto;
+    border-radius: 5px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 40%;
+   }
+   .green{
+    width: 100%;
+    height: 50%;
+    float: left;
+    background-color: green;
+
+   }
+   .confirm{
+    width: 100%;
+    height: 50%;
+   }
+   img{
+    width: 20%;
+    height: 45%;
+    margin-top: 40px;
+    margin-left: 170px;
+   }
+   .buton{
+    background-color: orange;
+    width: 30%;
+    height: 40px;
+    color: #fefefe;
+    border-radius: 5px;
+    border-color: orange;
+    margin-left: 150px;
+   }
+</style>
+<body>
+<p style="font-size: 40px;">Please sign up</p>
+<input type="text" placeholder="First name" class="firstname">
+<input type="text" placeholder="Second name" class="lastname">
+<input type="text" placeholder="Email adress" class="email">
+<input type="text" placeholder="Password" class="password">
+<div style="width: 350px;"><input type="checkbox" class = 'check' style="width: 20px; float: left;"> <div style="margin-top: 15px;">I agree with Privacy Policy </div> </div>
+<button class="btn">Sign up</button>
+<div class="modal">
+<div class="modalwindow">
+    <div class="green">
+    <img src="./tick.png" alt="">
+    </div>
+    <div class="confirn"> 
+        <div style=" margin-left: 185px; "><p style="font-size: 20px;">Great!</p></div>
+        <div style=" margin-left: 70px;"><p>Your account has been created succesfully.</p></div>
+        <button class="buton">Start Exploring</button>
+    </div>
+</div>
+</div>
+<div class="green">
+    <script src="./script.js"></script>
+
+
+</body>
+</html>
